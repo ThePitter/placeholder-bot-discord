@@ -11,5 +11,5 @@ async def on_ready():
 
 
 
-# This line must be last, it starts the bot
+# This line must be last, it starts the bot :D
 client.run(bot_token.bottoken)

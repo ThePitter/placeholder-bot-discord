@@ -4,6 +4,7 @@ import discord # view discord.py documents at https://discordpy.readthedocs.io
 import bot_token
 import bot_test_actions
 import bot_prefix
+import bot_actions
 
 client = discord.Client()
 
@@ -26,6 +27,7 @@ async def on_message(message):
     #if message.content.startswith("/Hello"):
     #    await message.channel.send('Hello There')
     await bot_test_actions.test_replies(message)
+    await bot_actions.manage_actions(message)
 
 
 

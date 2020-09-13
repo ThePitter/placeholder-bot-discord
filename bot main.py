@@ -2,7 +2,8 @@
 
 import discord # view discord.py documents at https://discordpy.readthedocs.io
 import bot_token
-import misc.bot_test_actions as bot_test_actions
+import bot_test_actions
+import bot_prefix
 
 client = discord.Client()
 
@@ -19,8 +20,12 @@ async def on_message(message):
     if message.author == client.user:
         return
     
+    print(message.content)
+
     # Main code management for messages
-    bot_test_actions.test_replies(message)
+    #if message.content.startswith("/Hello"):
+    #    await message.channel.send('Hello There')
+    await bot_test_actions.test_replies(message)
 
 
 

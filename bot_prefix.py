@@ -4,6 +4,7 @@ prefix = '/'
 
 # Future code to manage changing said prefix and more goes here
 async def change_prefix(message):
+    global prefix
     content = message.content.split(" ")
     if len(content) > 1:
         prefix = content[1]

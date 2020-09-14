@@ -7,5 +7,5 @@ https://discord.com/oauth2/authorize?&client_id=752997157405196329&scope=bot&per
 
 I have no idea how markup works so this isn't going to be that pretty :/
 
-# Coding Rules:
+## Coding Rules:
 ...

@@ -8,5 +8,5 @@ https://discord.com/oauth2/authorize?&client_id=752997157405196329&scope=bot&per
 I have no idea how markup works so this isn't going to be that pretty :/
 
 ## Coding Rules:
-...
-hello, this is a message
+
+> Specific functions and commands go in the miscellaneous actions area, register all commands on the actions page.

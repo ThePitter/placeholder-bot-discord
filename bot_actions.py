@@ -1,6 +1,7 @@
 # imports
 import bot_prefix
 import bot_misc_actions
+import question
 
 # all major actions should go here. commands should be in all lowercase to support any case
 actions = {
@@ -9,6 +10,7 @@ actions = {
     "changeprefix" : bot_prefix.change_prefix,
     "testpast" : bot_misc_actions.test_past_messages,
     "hello" : bot_misc_actions.hello_response,
+    "question" : question.question_input,
 }
 
 

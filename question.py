@@ -4,8 +4,11 @@ import discord
 import random
 import bot_prefix
 import re # Regex functions, used to find if a string matches a pattern and such
+from action import action
 
+@action("question", description = "Marks content as a question so that others can tag answers to it and view it in the future.")
 async def question_input(message): # manages new questions
+
     text = message.content[9:].strip()
     await message.delete()
     id = random.randrange(start=0, stop=9999)
